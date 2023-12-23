@@ -1,4 +1,4 @@
-#temps video: 33:07
+#temps video: 44:45
 
 import tkinter as tk
 # from tkinter import ttk
