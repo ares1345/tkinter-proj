@@ -27,13 +27,13 @@ entry.pack()
 
 label2 = ttk.Label(master=window, text="My label")
 label2.pack()
-button2 = ttk.Button(master=window, command=lambda: print("hello") #lambda functions are undeclared functions
+button2 = ttk.Button(master=window, command=lambda: print("hello")) #lambda functions are undeclared functions
 button2.pack()
 
 
 
 #tk-button
-button = ttk.Button(master=window, text= 'A button', command=button_func)) 
+button = ttk.Button(master=window, text= 'A button', command=button_func)
 button.pack(pady = 10) 
 
 
