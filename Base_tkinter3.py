@@ -25,10 +25,10 @@ label = ttk.Label(master=window, text='text')
 label.pack()
 
 entry = ttk.Entry(master=window)
-output_str = tk.StringVar()
+output_str = tk.StringVar() #helps to automatically gets the value inside of it
 entry.pack()
 
-button = ttk.Button(master=window, text ="buttton", command=button_func)
+button = ttk.Button(master=window, text ="button", command=button_func)
 button.pack()
 
 button2 = ttk.Button(master=window, text="something something", command=button_func2)
