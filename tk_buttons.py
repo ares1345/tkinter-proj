@@ -31,8 +31,11 @@ che_button = ttk.Checkbutton(window,
                             offvalue=5) #when its off
 che_button.pack()
 
-
-
+#radio buttons
+radio1 = ttk.Radiobutton(window, text="Radiobutton 1", value="radio 1")
+radio1.pack() #radio buttons must have values or else it breaks
+radio2 = ttk.Radiobutton(window, text="Radiobutton 2", value="radio 2")
+radio2.pack()
 
 
 
