@@ -6,7 +6,10 @@ def button_func():
     print("t")
 
     #Update label
-    label.config(text='some other text') #modify a setting of said variable inside the widget
+    #label.configure(text='some other text') #modify a setting of said variable inside the widget
+    #OR
+    label['text'] = "aaaaaaaaaaa"
+
 
 window = ttk.Window(themename = 'darkly') 
 window.title("Getting and setting widgetsgi")
