@@ -9,21 +9,30 @@ def button_func():
     #label.configure(text='some other text') #modify a setting of said variable inside the widget
     #OR
     label['text'] = entry_txt
+    entry['state'] = 'disabled' #would disable the widget
+
+
+def button_func2():
+    label["text"] = "some text"
+    entry["state"] = 'enabled'
 
 
 window = ttk.Window(themename = 'darkly') 
-window.title("Getting and setting widgetsgi")
+window.title("Getting and setting widgets")
 window.geometry("800x500") #widthxheight
 
 label = ttk.Label(master=window, text='text')
 label.pack()
 
-entry = ttk.Button(master=window)
+entry = ttk.Entry(master=window)
 output_str = tk.StringVar()
 entry.pack()
 
 button = ttk.Button(master=window, text ="buttton", command=button_func)
 button.pack()
+
+button2 = ttk.Button(master=window, text="something something", command=button_func2)
+button2.pack()
 
 
 
