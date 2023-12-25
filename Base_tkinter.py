@@ -24,12 +24,23 @@ title_label = ttk.Label(master = window, #master is the container where we put i
     font = "Calibri 24 bold")
 title_label.pack() #serve to place this label inside of window variable, aka the value of master         No commas, can also add bold or italic after it
 
+
+
 #input field
 input_frame = ttk.Frame(master = window)
 #type d'objet que l'on veut créer, dans ce cas Frame car on veut mettre d'autre elements dedans
 entry_int = tk.IntVar() #create a variable to store and update values
-entry = ttk.Entry(master = input_frame, textvariable = entry_int) #link the the widget with the variable
-button = ttk.Button(master = input_frame, text = "Convert", command = convert)
+entry = ttk.Entry(master = input_frame,
+                textvariable = entry_int) #link the the widget with the variable
+
+
+
+button = ttk.Button(master = input_frame,
+                    text = "Convert",
+                    command = convert)
+
+
+
 
 entry.pack(side = 'left', padx = 10)
 #we want to put this inside input_frame, note that tkinter puts it in order of entry
@@ -37,6 +48,9 @@ entry.pack(side = 'left', padx = 10)
 button.pack(side = 'left') #same thing
 #side = left helps to position the widgets, center is the default
 input_frame.pack(pady = 10) #and we put this on the window
+
+
+
 
 #output
 output_str = tk.StringVar() #variable to store a string

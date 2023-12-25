@@ -3,12 +3,12 @@ import tkinter as tk
 import ttkbootstrap as ttk
 
 def button_func():
-    print("t")
+    entry_txt = entry.get()
 
     #Update label
     #label.configure(text='some other text') #modify a setting of said variable inside the widget
     #OR
-    label['text'] = "aaaaaaaaaaa"
+    label['text'] = entry_txt
 
 
 window = ttk.Window(themename = 'darkly') 
