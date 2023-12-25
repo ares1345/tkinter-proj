@@ -14,11 +14,13 @@ button_str = tk.StringVar()
 
 
 button = ttk.Button(window, text="button", command=button_func, textvariable=button_str)
-#it is not necessar to write master =, the 1st argument is alr assumed to be the master variable
+#it is not necessary to write master =, the 1st argument is alr assumed to be the master variable
 #reminder that textvariable overwrites text
 button.pack()
 
-
+#check buttons
+che_button = ttk.Checkbutton(window, text="checkbox 1", command=lambda: print("checkbutton"))
+che_button.pack()
 
 
 
