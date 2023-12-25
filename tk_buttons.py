@@ -31,10 +31,27 @@ che_button = ttk.Checkbutton(window,
                             offvalue=5) #when its off
 che_button.pack()
 
+che_button2 = ttk.Checkbutton(window,
+                              text="Checkbutton 2",
+                              command=lambda: print('test'))
+che_button2.pack()
+
+
+
+radio_var = tk.StringVar() #converts widgets values to strings if they are ints
+
+
 #radio buttons
-radio1 = ttk.Radiobutton(window, text="Radiobutton 1", value="radio 1")
-radio1.pack() #radio buttons must have values or else it breaks
-radio2 = ttk.Radiobutton(window, text="Radiobutton 2", value="radio 2")
+radio1 = ttk.Radiobutton(window,
+                        text="Radiobutton 1",
+                        value="radio 1",
+                        command=lambda: print(radio_var.get()),
+                        variable=radio_var)
+radio1.pack() #radio buttons must have values or else it breaks, default value is 0
+
+radio2 = ttk.Radiobutton(window,
+                        text="Radiobutton 2",
+                        value="radio 2")
 radio2.pack()
 
 
