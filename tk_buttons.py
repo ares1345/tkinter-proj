@@ -55,7 +55,8 @@ radio2 = ttk.Radiobutton(window,
 radio2.pack()
 
 
-
+#video time: 1:24:00
+#do the exercise
 
 
 
