@@ -12,7 +12,6 @@ def button_func():
 
 
 string_var = tk.StringVar() #or IntVar, BooleanVar, DoubleVar
-#value = "txt" sets the default value of said variable, in the ()
 
 
 
@@ -25,8 +24,17 @@ entry.pack()
 button = ttk.Button(master=window, text="button", command=button_func)
 button.pack()
 
+exer_str = tk.StringVar(value="test")
+#value sets the default value of said variable, in the ()
 
 
+ex_label = ttk.Label(master=window, textvariable=exer_str)
+
+ex_entry = ttk.Entry(master=window, textvariable=exer_str)
+ex_entry.pack()
+
+ex_entry2 = ttk.Entry(master=window, textvariable=exer_str)
+ex_entry2.pack()
 
 
 
