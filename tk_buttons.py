@@ -47,12 +47,14 @@ radio1 = ttk.Radiobutton(window,
                         value="radio 1",
                         command=lambda: print(radio_var.get()),
                         variable=radio_var)
-radio1.pack() #radio buttons must have values or else it breaks, default value is 0
+radio1.pack() #radio buttons must have values and be different or else it breaks, default value is 0
 
 radio2 = ttk.Radiobutton(window,
                         text="Radiobutton 2",
                         value="radio 2")
 radio2.pack()
+
+
 
 
 
