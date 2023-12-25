@@ -19,13 +19,20 @@ button = ttk.Button(window, text="button", command=button_func, textvariable=but
 button.pack()
 
 #check buttons
-check_var = tk.BooleanVar()
+check_var = tk.IntVar(value=10)
+#value in this case make the checkbox checked or not
+
 che_button = ttk.Checkbutton(window,
                             text="checkbox 1",
                             command=lambda: print(check_var.get()),
-                            variable=check_var) #checkbuttons uses variables not textvariables
+                            variable=check_var, #checkbuttons uses variables not textvariables
                             #AND stores the value of the checkbox
+                            onvalue=10, #sets the value when its on
+                            offvalue=5) #when its off
 che_button.pack()
+
+
+
 
 
 
