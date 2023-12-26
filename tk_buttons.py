@@ -10,6 +10,10 @@ def button_func():
     print("t")
 
 
+def ex_func():
+    print(radio_var.get())
+    check_var.set(value=5)
+
 button_str = tk.StringVar()
 
 
@@ -53,6 +57,21 @@ radio2 = ttk.Radiobutton(window,
                         text="Radiobutton 2",
                         value="radio 2")
 radio2.pack()
+
+
+ex_r1 = ttk.Radiobutton(window,
+                        value="A",
+                        text="Radioo Button 1",
+                        variable=radio_var,
+                        command=ex_func)
+ex_r1.pack()
+
+ex_r2 = ttk.Radiobutton(window,
+                        value="B",
+                        text="Radioo Button 2",
+                        variable=radio_var,
+                        command=ex_func)
+ex_r2.pack()
 
 
 #video time: 1:24:00
